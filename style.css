@@ -56,8 +56,20 @@ body {
 }
 
 .first {
+    position: relative;
     width: 50%;
     height: 100%;
+    
+}
+.smcircle{
+    position: absolute;
+    top: 50%;
+    right: -.3vw;
+    transform: translate(0, -50%);
+    width: 0.5vw;
+    height: 0.5vw;
+    border-radius: 50%;
+    background-color:#5b5b5b77;
 }
 
 .sec {
@@ -68,12 +80,10 @@ body {
 
 .sec h4 {
     font-size: 3vh;
-
 }
 
 .sec h6 {
     font-size: 2vh;
     opacity: .5;
     font-weight: 500;
-
 }
