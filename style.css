@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 
@@ -17,17 +17,19 @@ body {
     background-color: #ffff;
 }
 
+/* circle */
 .circle {
     position: absolute;
     top: 50%;
     left: -100vh;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%) rotate(100deg);
     height: 200vh;
     width: 200vh;
     border-radius: 50%;
     border: 2px solid #f1f1f1;
 }
 
+/* strip  */
 .strip {
     display: flex;
     position: absolute;
@@ -59,9 +61,10 @@ body {
     position: relative;
     width: 50%;
     height: 100%;
-    
+
 }
-.smcircle{
+
+.smcircle {
     position: absolute;
     top: 50%;
     right: -.3vw;
@@ -69,13 +72,14 @@ body {
     width: 0.5vw;
     height: 0.5vw;
     border-radius: 50%;
-    background-color:#5b5b5b77;
+    background-color: #5b5b5b77;
 }
 
 .sec {
     padding-left: 30px;
     width: 50%;
     height: 100%;
+    opacity: .4;
 }
 
 .sec h4 {
@@ -86,4 +90,28 @@ body {
     font-size: 2vh;
     opacity: .5;
     font-weight: 500;
+}
+
+/* button panel */
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 5%;
+    height: 20%;
+}
+
+.mncircle {
+    cursor: pointer;
+    border-radius: 50%;
+    height: 1vw;
+    width: 1vw;
+    opacity: .08;
+    background-color: rgb(0, 0, 0);
+
 }
